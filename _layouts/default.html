@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
   {% include head.html %}
 
   <body>
 
-    {% include header.html %}
+    {% include top.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+
+    <div class="container-fluid">
+      <div class="page-header">
+        <h1>Остановим строительство двух свинокомплексов <small>в Мойсичах и Совлово</small></h1>
       </div>
+      <!-- {% include header.html %} -->
+      <!-- {% include intro.html %} -->
+
+      <div class="row">
+        <div class="col-md-8">
+          {{ content }}
+        </div>
+
+        <div class="col-md-4">
+          {% include docs.html %}
+          {% include news.html %}
+          {% include media.html %}
+          {% include support.html %}
+        </div>
+      </div>
+
+      {% include footer.html %}
+
     </div>
-
-    {% include footer.html %}
-
   </body>
-
 </html>
