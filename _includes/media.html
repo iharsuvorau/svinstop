@@ -1,6 +1,8 @@
 <div class="panel panel-default">
   <div class="panel-heading">Видео-, аудиофайлы</div>
   <div class="panel-body">
-    Panel content
+	{% for post in site.categories.media %}
+		<p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+	{% endfor %}
   </div>
 </div>
