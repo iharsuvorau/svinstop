@@ -2,7 +2,8 @@
   <div class="panel-heading">Видео-, аудиофайлы</div>
   <div class="panel-body">
 	{% for post in site.categories.media %}
-		<p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+		<!-- <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p> -->
+		<p>{{ post.content }}</p>
 	{% endfor %}
   </div>
 </div>

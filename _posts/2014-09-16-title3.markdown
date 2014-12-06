@@ -1,8 +1,0 @@
----
-layout: post
-title:  "title 3"
-date:   2014-09-16
-category: support
----
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. At multis malis affectus. Cur haec eadem Democritus? Torquatus, is qui consul cum Cn. Ut in voluptate sit, qui epuletur, in dolore, qui torqueatur.
