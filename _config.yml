@@ -11,6 +11,17 @@ url: "http://www.svinstop.org" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
-#
+# 
 highlighter: pygments
 repository: https://github.com/iharsuvorau/svinstop
+
+# prose.io
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://www.svinstop.org'
+  media: 'media'
+  ignore: 
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
