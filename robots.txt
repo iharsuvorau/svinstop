@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /feed.xml
+Disallow: /Gemfile*
+Disallow: /README.md
+
+Sitemap: http://www.svinstop.org/sitemap.xml
