@@ -15,17 +15,5 @@ markdown: kramdown
 highlighter: pygments
 repository: https://github.com/iharsuvorau/svinstop
 
-# sitemap config
-sitemap:
-    file: "/sitemap.xml"
-    exclude:
-        - "/atom.xml"
-        - "/feed.xml"
-        - "/feed/index.xml"
-        - "/CNAME"
-        - "/Gemfile"
-        - "/Gemfile.lock"
-    include_posts:
-        - "/index.html"
-    #change_frequency_name: "change_frequency"
-    #priority_name: "priority"
+gems:
+  - jekyll-sitemap
