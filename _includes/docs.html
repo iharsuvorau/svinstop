@@ -2,7 +2,8 @@
   <div class="panel-heading">Документы</div>
   <div class="panel-body">
 	{% for post in site.categories.docs %}
-		<p><a href="{{ post.link | prepend: site.baseurl }}">{{ post.title }}</a> – {{ post.link_info }}</p>
+		<p><a href="{{ post.link | prepend: site.baseurl }}">{{ post.title }}</a> {{ post.link_info }}</p>
 	{% endfor %}
+	  <iframe src="https://docs.google.com/document/d/1iyHxQDBsGOVk0XBaZQ_LqnxGWqoj4iac5r5l9tkn03g/pub?embedded=true"></iframe>
   </div>
 </div>
