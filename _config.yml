@@ -3,7 +3,7 @@ title: "svinstop.org"
 email: svinstop@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Сайт в поддержку общественной инициативы против строительства двух свинокомплексов на 100 000 голов близ жилых территорий в районе д. Мойсичи и д. Совлово, что в трёх и восемнадцати километрах от г. Молодечно. 
-baseurl: "http://iharsuvorau.github.io/svinstop" # the subpath of your site, e.g. /blog/
+baseurl: "/svinstop" # the subpath of your site, e.g. /blog/
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 # github_username:  jekyll
