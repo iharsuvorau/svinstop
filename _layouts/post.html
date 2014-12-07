@@ -2,18 +2,11 @@
 layout: default
 ---
 
+<header>
+  <h2>{{ page.title }}</h2>
+  <p class="small">{{ page.date | date: "%Y-%m-%d" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+</header>
 
-<div class="panel panel-default">
-  <div class="panel-body">
-
-	  <header>
-	    <h2>{{ page.title }}</h2>
-	    <p class="small">{{ page.date | date: "%Y-%m-%d" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-	  </header>
-
-	  <article>
-	    {{ content }}
-	  </article>
-
-  </div>
-</div>
+<article>
+  {{ content }}
+</article>
