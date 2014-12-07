@@ -1,5 +1,6 @@
 <header>
-<nav class="navbar navbar-default" role="navigation">
+
+<!-- <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
       <a href="{{ site.url }}" class="navbar-brand">www.svinstop.org</a>
@@ -14,5 +15,20 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->
+
+<div class="header">
+  <nav>
+    <ul class="nav nav-pills pull-right">
+     {% for page in site.pages %}
+        {% if page.title %}
+      <li role="presentation"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+  <h3 class="text-muted"><a href="/">Svinstop.org</a></h3>
+  <hr/>
+</div>
+
 </header>
