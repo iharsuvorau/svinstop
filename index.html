@@ -15,19 +15,18 @@ layout: default
   <div class="panel-body">
     {% for post in site.posts %}
       <p>
-        <section>
-          {{ post.date | date: "%Y-%m-%d" }}, 
-          {% assign type = post.category %}
-          {% case type %}
-            {% when 'news' %}новости:
-            {% when 'support' %}поддержка:
-            {% when 'docs' %}документы:
-            {% when 'media' %}медиа:
-            {% when 'petitions' %}петиция:
-          {% endcase %}
-        </section>
-        <p class="lead"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+        {{ post.date | date: "%Y-%m-%d" }}, 
+        {% assign type = post.category %}
+        {% case type %}
+          {% when 'news' %}новости:
+          {% when 'support' %}поддержка:
+          {% when 'docs' %}документы:
+          {% when 'media' %}медиа:
+          {% when 'petitions' %}петиция:
+        {% endcase %}
       </p>
+      <p class="lead"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+      <hr/>
     {% endfor %}
   </div>
 </div>
