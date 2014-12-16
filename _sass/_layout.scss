@@ -6,3 +6,16 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
+.crop {
+	height: 300px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.crop img {
+	width: 655px;
+	height: 420px;
+	margin: -10% 0 0 0;
+}
